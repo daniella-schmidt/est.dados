@@ -11,8 +11,6 @@ A navegação é unidirecional (do início ao fim).
 um para o próximo nó e outro para o nó anterior.
 A navegação pode ser feita em ambas as direções (do início ao fim e vice-versa).*/
 
-using System;
-
 public class Node
 {
     public int Data { get; set; }
@@ -34,7 +32,7 @@ public class LinkedList
         head = null;
     }
 
-    public void AddToEnd(int data)
+    public void Add(int data)
     {
         Node newNode = new Node(data);
         if (head == null)
@@ -75,11 +73,11 @@ class Program
     static void Main(string[] args)
     {
         LinkedList list = new LinkedList();
-        list.AddToEnd(1);
-        list.AddToEnd(2);
-        list.AddToEnd(3);
-        list.AddToEnd(4);
+        list.Add(1);
+        list.Add(2);
+        list.Add(3);
+        list.Add(4);
 
-        list.Display();
+        list.Display(); // Saída: 1 2 3 4
     }
 }
