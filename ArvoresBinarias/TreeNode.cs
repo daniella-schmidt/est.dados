@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 namespace ArvoresBinarias
 {
-    public class TreeNode
-    {
-        public class TreeNode<T>{
+        public class TreeNode<T>
+        {
             public T Data  { get; set; }
             public TreeNode<T> Parent { get;}
             public List<TreeNode<T>> Children { get; set;}
@@ -22,5 +21,4 @@ namespace ArvoresBinarias
             return height;
             }
         }
-    }
 }

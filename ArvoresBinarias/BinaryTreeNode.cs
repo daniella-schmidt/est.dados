@@ -7,10 +7,15 @@ namespace ArvoresBinarias
 {
     public class BinaryTreeNode
     {   
+        public enum TraversalEnum
+        {
+            PREORDER, INORDER, POSTORDER
+        }
         // ":"  Atributos recebidos por 'herança'
 
         public class BinaryTreeNode<T> : TreeNode<T>
         {
+
             public BinaryTreeNode()
             {
                 base.Children = new List<TreeNode<T>>();
@@ -26,6 +31,6 @@ namespace ArvoresBinarias
                 get { return (BinaryTreeNode<T>) Children[1]; }
                 set { Children[1] = value;}
             }
-        }      
+        }
     }
 }
